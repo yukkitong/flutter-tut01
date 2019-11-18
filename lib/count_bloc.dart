@@ -15,10 +15,12 @@ class CountBloc extends Bloc<CountEvent, CountState> {
     }
   }
 
+  /// 증가
   onIncrement() {
     add(IncrementEvent());
   }
 
+  /// 감소
   onDecrement() {
     add(DecrementEvent());
   }
